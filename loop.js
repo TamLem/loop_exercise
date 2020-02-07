@@ -1,5 +1,5 @@
 
-//function builds  at tree of asterix on webpage
+//function asterixTree builds  at tree of asterix on webpage
 
 function asterixTree () {
 
@@ -36,21 +36,6 @@ function asterixTree () {
     document.write("&nbsp;");
 
 }
-
-
-
-// function greaterThan100 
-
-function greaterThan100 () {
-
-    let num;
-    
-    //......
-    
-}
-
-greaterThan100()
-
 
 
 
