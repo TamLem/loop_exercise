@@ -39,6 +39,7 @@ function asterixTree () {
 
 
 
+
 // function isPrime returns true if a given number is prime if not false
 
 function isPrime(n) {
@@ -79,7 +80,7 @@ function aFromAsterix() {
 
 // function delrep will delete consecutive repeating charachters from a string
 
-function delrep(str) {
+function delRep(str) {
 
     let x = ""
 
@@ -124,11 +125,9 @@ function xos(str) {
 
 
 
-
-
 // Move zeros in a string to the end of the string
 
-function moveZerosStr(str) {
+function moveZeros(str) {
 
     // arr = str.split('');
 
@@ -148,7 +147,6 @@ function moveZerosStr(str) {
 
 
 
-
 // Funtion to return a string list of prime number below a given input
 
 function listPrimesBelow(num) {
@@ -157,20 +155,24 @@ function listPrimesBelow(num) {
 
 
 
-    for (i = 1; i < num; i++) {
+    for (i = 2; i < num; i++) {
 
         //console.log('s');
 
-        for (k = 2; k < 10; k++) {
+        let isPrime = true;
+
+        for (k = 2; k < i; k++) {
 
             //console.log(k);
-            if (i % k == 0 && i != k) break;
+
+            if (i % k == 0 && i != k) {
+            isPrime= false; continue; }
 
         }
 
         //console.log(k);
 
-        if (k == 10) str += i + ' '
+        if (isPrime == true) str += i + ' '
 
     }
 
