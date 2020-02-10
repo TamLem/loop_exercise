@@ -39,25 +39,6 @@ function asterixTree () {
 
 
 
-
-// function isPrime returns true if a given number is prime if not false
-
-function isPrime(n) {
-
-    n = +n;
-
-    for (k=2; k<10; k++) {
-
-        if (n%k==0 && n!=k) {return false; break;}
-        
-    }
-
-    if (k==10 && n) {return true}
-    
-} 
-
-
-
 // function a FromAsterix uses loopes to print a pattern of Asterix charachters, in this case the letter 'A'
 
 function aFromAsterix() {
